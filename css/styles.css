@@ -11,7 +11,7 @@ Table Of Contents:
 - Details 2
 - Contact
 - Copyright
-- Back To Top Button 
+- Back To Top Button
 - Media Queries
 ******************************************/
 
@@ -34,7 +34,7 @@ html {
 }
 
 body, p {
-	color: #6b747b; 
+	color: #6b747b;
 	font: 400 1rem/1.625rem "Open Sans", sans-serif;
 }
 
@@ -350,17 +350,17 @@ input[type='checkbox'] {
 /* animate in */
 .my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
 	opacity: 1;
-	-webkit-transform: translateY(0) perspective(37.5rem) rotateX(0); 
-	-ms-transform: translateY(0) perspective(37.5rem) rotateX(0); 
-	transform: translateY(0) perspective(37.5rem) rotateX(0); 
+	-webkit-transform: translateY(0) perspective(37.5rem) rotateX(0);
+	-ms-transform: translateY(0) perspective(37.5rem) rotateX(0);
+	transform: translateY(0) perspective(37.5rem) rotateX(0);
 }
 
 /* animate out */
 .my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
 	opacity: 0;
-	-webkit-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
-	-ms-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
-	transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
+	-webkit-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg);
+	-ms-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg);
+	transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg);
 }
 
 /* dark overlay, start state */
@@ -668,8 +668,9 @@ input[type='checkbox'] {
 /*     Contact     */
 /*******************/
 .form-1 .left-wrapper {
-	background: url("../images/background-dots.png") #3b363c;
-    background-blend-mode: color-burn;
+	/* background: url("../images/background-dots.png") #3b363c;
+    background-blend-mode: color-burn; */
+	background-color: #000;
 }
 
 .form-1 .left-wrapper .text-container {
@@ -705,8 +706,9 @@ input[type='checkbox'] {
 }
 
 .form-1 .right-wrapper {
-	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/contact-right-background.jpg") center;
-	background-size: cover;
+	/* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/contact-right-background.jpg") center;
+	background-size: cover; */
+	background-color: #fff;
 }
 
 .form-1 .right-wrapper .form-container {
@@ -772,7 +774,7 @@ a:hover.back-to-top {
 
 /*************************/
 /*     Media Queries     */
-/*************************/	
+/*************************/
 /* Min-width 768px */
 @media (min-width: 768px) {
 
@@ -785,7 +787,7 @@ a:hover.back-to-top {
 	.header .left-wrapper .text-container:before {
 		top: 120px;
 	}
-	
+
 	.header .left-wrapper .text-container:after {
 		bottom: 110px;
 	}
@@ -810,8 +812,8 @@ a:hover.back-to-top {
 		right: -300px;
 	}
 	/* end of details 1 */
-	
-	
+
+
 	/* Details 1 */
 	.basic-3 .image-container {
 		top: -80px;
@@ -824,7 +826,7 @@ a:hover.back-to-top {
 	.form-1 .left-wrapper .contact-icon img {
 		width: 50px;
 	}
-	
+
 	.form-1 .left-wrapper .contact-text {
 		margin-left: 1.5rem;
 	}
@@ -835,7 +837,7 @@ a:hover.back-to-top {
 
 /* Min-width 992px */
 @media (min-width: 992px) {
-	
+
 	/* General Styles */
 	.h1-large {
 		font-size: 3.5rem;
@@ -893,7 +895,7 @@ a:hover.back-to-top {
 		margin-top: 0;
 		margin-bottom: 0;
 	}
-	
+
 	.navbar .nav-item .nav-link {
 		padding-right: 0.625rem;
 		padding-left: 0.625rem;
@@ -927,7 +929,7 @@ a:hover.back-to-top {
 		padding-bottom: 3rem;
 	}
 	/* end of header */
-	
+
 
 	/* Services */
 	.basic-1 .services-container {
@@ -948,7 +950,7 @@ a:hover.back-to-top {
 	.basic-2 .text-container {
 		width: 720px;
 	}
-	
+
 	.basic-2 .image-container {
 		right: -100px;
 	}
@@ -961,7 +963,7 @@ a:hover.back-to-top {
 		margin-right: 0;
 		margin-left: auto;
 	}
-	
+
 	.basic-3 .image-container {
 		left: -100px;
 	}
@@ -986,7 +988,7 @@ a:hover.back-to-top {
 	}
 	/* end of general styles */
 
-	
+
 	/* Navigation */
 	.navbar .container {
 		max-width: 100%;
@@ -1006,12 +1008,12 @@ a:hover.back-to-top {
 		top: 300px;
 		left: 70px;
 	}
-	
+
 	.header .left-wrapper .text-container:after {
 		bottom: 320px;
 		right: 70px;
 	}
-	
+
 	.header .left-wrapper h2 {
 		width: 29rem;
 	}
@@ -1094,7 +1096,7 @@ a:hover.back-to-top {
 		height: 100%;
 		padding: 0;
 	}
-	
+
 	.form-1 .right-wrapper .form-container form {
 		width: 40rem;
 		margin-right: auto;
