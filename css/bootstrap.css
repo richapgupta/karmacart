@@ -3034,15 +3034,6 @@ fieldset:disabled a.btn {
   border-color: #f8f9fa;
 }
 
-.btn-outline-light1 {
-  color: #f8f9fa;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
-  color: #333333;
-	font-weight: 600;
-	font-size: 0.875rem;
-}
-
 .btn-outline-light:hover {
   color: #212529;
   background-color: #f8f9fa;
