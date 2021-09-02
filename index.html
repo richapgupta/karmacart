@@ -77,12 +77,18 @@
         font-size: 0.875rem;
     }
 
+    .btn {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 0.875rem;
+    }
+
     img {
         filter: grayscale(100%);
     }
 
     .carousel {
-        margin: 200px 100px 0 100px;
+        margin: 150px 100px 0 100px;
         padding: 10px;
         background: #FFF300;
     }
@@ -138,7 +144,12 @@
 
     .header .left-wrapper .text-container:after,
     .header .left-wrapper .text-container:before {
-        border-color: #7400FF;
+        border-color: #000CFF;
+        opacity: 0.9;
+    }
+
+    .fade.show {
+        opacity: 0.5;
     }
 
     @media (max-width: 576px) {
@@ -211,9 +222,12 @@
                     </li>
 
                     <li class="nav-item">
+                        <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#volunteer" aria-controls="volunteer">Volunteer Now!</button> -->
                         <!--button class="btn  btn-outline-light text-uppercase" type="submit">Donate</button -->
                         <button class="btn  btn-outline-light1 text-uppercase font-weight-bold"
-                            type="submit">Donate</button>
+                            data-bs-toggle="offcanvas" data-bs-target="#donate" aria-controls="donate"
+                            type="button">Donate</button>
                     </li>
                 </ul>
             </div> <!-- end of navbar-collapse -->
@@ -309,7 +323,9 @@
                         <p>With this bold & powerful ambition, we shall do whatever it
                             takes to save the precious lives of one of the most intelligent creatures created by God.
                         </p>
-                        <a class="btn-solid-reg text-uppercase" href="#your-link">Donate</a>
+                        <button class="btn  btn-outline-light1 text-uppercase font-weight-bold"
+                            style="background: #CCFF00;" data-bs-toggle="offcanvas" data-bs-target="#donate"
+                            aria-controls="donate" type="button">Donate</button>
                         <!--a class="btn-outline-reg page-scroll" href="#contact">CONTACT</a -->
                     </div> <!-- end of text-container -->
                     <div class="image-container align-self-center">
@@ -351,6 +367,8 @@
                             programs. Thus, they get the
                             first-hand experience of the difference they are making in the lives.
                         </p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="background-color: #FF00B4;
+    border-color: #FE5000;" data-bs-target="#volunteer" aria-controls="volunteer">Power of 3</button>
 
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
@@ -378,15 +396,10 @@
                             other people.</p>
                         <p>
                             Partners we salute you for who are and who you are not.
-                        </p>
-
-                        Partners we salute you for who are and who you are not.[8/31, 6:56 PM] Mittal Nlehs: Volunteers
-                        in other word Hero. Working with dedication and in integrity towards achieving the dream.
-                        Volunteers are our strength and pillars of the NGO . They are the face of the organisation. And
-                        they have the power to create the impossible. You are our true partners, ambassadors and
-                        inspiration .
-                        Thank you for being with us</p>
-
+                            Thank you for being with us</p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            style="background: #585DFF;" data-bs-target="#volunteer" aria-controls="volunteer">Volunteer
+                            Now!</button>
                     </div> <!-- end of text-container -->
                     <div class="image-container align-self-center">
                         <!-- <i class="fas fa-hand-holding-usd"></i> -->
@@ -421,9 +434,10 @@
                         <p>To create a lasting change, each one of us has to contribute.
                             We believe that corporate partnerships shall create sustainable impact for India’s
                             Healthcare domain.
-                            This will help brands meet their CSR objectives as well.
-
-                        </p>
+                            This will help brands meet their CSR objectives as well. </p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#CSR"
+                            style="    background-color: #FE5000;
+    border-color: #FE5000;" aria-controls="CSR">CSR</button>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -558,6 +572,33 @@
         </div>
     </div>
 
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="volunteer" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">volunteer </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            ...
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="donate" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Donate Now! </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            ...
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="CSR" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">CSR! </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            ...
+        </div>
+    </div>
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
