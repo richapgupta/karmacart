@@ -66,21 +66,17 @@
         margin-left: 20px;
     }
 
-    .btn-outline-light1 {
-        color: #f8f9fa;
-        /* background-color: #f8f9fa;
-        border-color: #f8f9fa; */
-        /*bacgkround-color: #00FFA9;*/
+    .btn-outline-light-green {
         background-color: #cafc4f;
         border-color: #cafc4f;
         color: #333333;
-        font-weight: 600;
+        font-weight: bold;
         font-size: 0.875rem;
+        text-transform: uppercase;
     }
 
     .btn {
         text-transform: uppercase;
-        font-weight: 600;
         font-size: 0.875rem;
     }
 
@@ -89,9 +85,15 @@
     }
 
     .carousel {
-        margin: 150px 100px 0 100px;
+        margin: 200px 100px 0 100px;
         padding: 10px;
         background: #cafc4f;
+    }
+
+    .carousel-item img {
+        width: auto;
+        height: 450px;
+        max-height: 450px;
     }
 
     .navbar-dark .navbar-brand {
@@ -154,6 +156,29 @@
         opacity: 0.5;
     }
 
+    .form-control-input,
+    .form-control-select {
+        border-radius: 0;
+    }
+
+    .form-floating>label {
+        padding-left: 1.3125rem;
+    }
+
+    .offcanvas-collapse {
+        background-color: #000;
+    }
+
+    .form-1 .left-wrapper.left-wrapper1 .contact-container {
+        margin-left: 2.75rem;
+    }
+
+    .form-1 .left-wrapper.left-wrapper1 .text-container {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+
     @media (max-width: 576px) {
         .detail-section {
             display: block;
@@ -165,6 +190,7 @@
 
         .carousel {
             margin: 0 0 10px 0;
+            padding: 7px;
         }
 
         .image-container {
@@ -180,9 +206,23 @@
             padding-bottom: 1rem;
         }
 
-        .btn.btn-outline-light1 {
+        .btn.btn-outline-light-green {
             margin-top: 20px;
             width: 100%;
+        }
+
+        .carousel-item img {
+            width: auto;
+            height: auto;
+        }
+
+        .w-50 {
+            width: 100% !important;
+        }
+
+        .header .left-wrapper .text-container:before,
+        .header .left-wrapper .text-container:after {
+            border-width: 10px 10px 0 0;
         }
     }
 </style>
@@ -224,12 +264,8 @@
                     </li>
 
                     <li class="nav-item">
-                        <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#volunteer" aria-controls="volunteer">Volunteer Now!</button> -->
-                        <!--button class="btn  btn-outline-light text-uppercase" type="submit">Donate</button -->
-                        <button class="btn  btn-outline-light1 text-uppercase font-weight-bold"
-                            data-bs-toggle="offcanvas" data-bs-target="#donate" aria-controls="donate"
-                            type="button">Donate</button>
+                        <button class="btn btn-lg w-100 btn-outline-light-green" data-bs-toggle="offcanvas"
+                            data-bs-target="#donate" aria-controls="donate" type="button">Donate</button>
                     </li>
                 </ul>
             </div> <!-- end of navbar-collapse -->
@@ -242,7 +278,7 @@
             <div class="row">
                 <div class="col-xl-5 left-wrapper">
                     <div class="text-container">
-                        <h2>Karmacart Social Foundation</h2>
+                        <h2>Karmacart <br>Social<br> Foundation</h2>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-xl-7">
@@ -325,9 +361,8 @@
                         <p>With this bold & powerful ambition, we shall do whatever it
                             takes to save the precious lives of one of the most intelligent creatures created by God.
                         </p>
-                        <button class="btn  btn-outline-light1 text-uppercase font-weight-bold"
-                            style="background: #cafc4f;" data-bs-toggle="offcanvas" data-bs-target="#donate"
-                            aria-controls="donate" type="button">Donate</button>
+                        <button class="btn btn-lg w-50 btn-outline-light-green" data-bs-toggle="offcanvas"
+                            data-bs-target="#donate" aria-controls="donate" type="button">Donate</button>
                         <!--a class="btn-outline-reg page-scroll" href="#contact">CONTACT</a -->
                     </div> <!-- end of text-container -->
                     <div class="image-container align-self-center">
@@ -386,7 +421,8 @@
                 <div class="col-lg-12 detail-section">
                     <div class="text-container">
                         <h2 class="text-uppercase">Volunteers</h2>
-                        <p>Volunteers in other word <b>"Hero"</b>. Working with dedication and integrity towards achieving the
+                        <p>Volunteers in other word <b>"Hero"</b>. Working with dedication and integrity towards
+                            achieving the
                             dream. Volunteers are our strength and pillars of the NGO. They are the face of the
                             organisation. And they have the power to create the impossible. You are our true partners,
                             ambassadors and inspiration.
@@ -399,18 +435,10 @@
                             Hero / Partners we salute you for who are and who you are not.
                             Thank you for being with us</p>
                         <!-- button class="btn btn-primary" -->
-                        <button class="btn btn-outline-light1" 
-                         type="button" 
-                         data-bs-toggle="offcanvas"
-                         style="background: #cafc4f;"
-                         data-bs-target="#volunteer" 
-                         aria-controls="Volunteer">Volunteer Now!</button>
-                            <!-- button class="btn  btn-outline-light1 
-                                 text-uppercase font-weight-bold"
-                                style="background: #cafc4f;" 
-                                data-bs-toggle="offcanvas" 
-                                data-bs-target="#donate"
-                            aria-controls="donate" type="button">Donate</button -->
+                        <button class="btn btn-lg w-50 btn-outline-light-green" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#volunteer" aria-controls="Volunteer">Volunteer
+                            Now!</button>
+
                     </div> <!-- end of text-container -->
                     <div class="image-container align-self-center">
                         <!-- <i class="fas fa-hand-holding-usd"></i> -->
@@ -446,8 +474,8 @@
                             We believe that corporate partnerships shall create sustainable impact for India’s
                             Healthcare domain.
                             This will help brands meet their CSR objectives as well. </p>
-                        <button class="btn btn-outline-light1" type="button" data-bs-toggle="offcanvas" data-bs-target="#CSR"
-                            style="    background-color: #cafc4f;" aria-controls="CSR">CSR</button>
+                        <button class="btn btn-lg w-50 btn-outline-light-green" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#CSR" aria-controls="CSR">CSR</button>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -471,7 +499,7 @@
                             <div class="contact-text">
                                 <div>
                                     101 AMANTRAN, 1st FLR, A WING,
-                                    <br> SHIVAJI CHOWK, 
+                                    <br> SHIVAJI CHOWK,
                                     <BR> KALYAN-421301
                                     <br> MAHARASHTRA
                                     <br>INDIA.
@@ -493,17 +521,18 @@
                             </div> <!-- end of contact-text -->
                         </div> <!-- end of contact-container -->
 
-                        <div class="contact-container"> 
+                        <div class="contact-container">
                             <div class="contact-icon">
                                 <img class="img-fluid" src="images/contact-icon-smartphone.svg" alt="alternative">
                             </div> <!-- end of contact-icon -->
-                                
+
                             <div class="contact-text">
                                 <div>
                                     Mobile: <a class="white no-line" href="tel:+91 9323232339">+91 932 32 32 339</a>
                                 </div>
                             </div> <!-- end of contact-text -->
-                        </div>><!-- end of contact container -->
+                        </div>
+                        <!-- end of contact container -->
 
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
@@ -539,6 +568,65 @@
         </div> <!-- end of container -->
     </div> <!-- end of form-1 -->
     <!-- end of contact -->
+    <br><br><br>
+    <!-- Contact -->
+    <div id="contact" class="form-1">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12 left-wrapper left-wrapper1">
+                    <div class="text-container">
+                        <h2>CONTACT DETAILS</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <!-- Contact Container -->
+                            <div class="contact-container">
+                                <div class="contact-icon">
+                                    <img class="img-fluid" src="images/contact-icon-pin.svg" alt="alternative">
+                                </div> <!-- end of contact-icon -->
+                                <div class="contact-text">
+                                    <div>
+                                        101 AMANTRAN, 1st FLR, A WING,
+                                        <br> SHIVAJI CHOWK, KALYAN - 421301
+                                        <br> MAHARASHTRA, INDIA.
+
+                                    </div>
+                                </div> <!-- end of contact-text -->
+                            </div> <!-- end of contact-container -->
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="contact-container">
+                                <div class="contact-icon">
+                                    <img class="img-fluid" src="images/contact-icon-mail.svg" alt="alternative">
+                                </div> <!-- end of contact-icon -->
+                                <div class="contact-text">
+                                    <div>
+                                        <a class="white no-line"
+                                            href="mailto:contact@karmacartfoundation.org">contact@karmacartfoundation.org</a>
+                                    </div>
+                                </div> <!-- end of contact-text -->
+                            </div> <!-- end of contact-container -->
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="contact-container">
+                                <div class="contact-icon">
+                                    <img class="img-fluid" src="images/contact-icon-smartphone.svg" alt="alternative">
+                                </div> <!-- end of contact-icon -->
+
+                                <div class="contact-text">
+                                    <div>
+                                        Mobile: <a class="white no-line" href="tel:+91 9323232339">+91 932 32 32 339</a>
+                                    </div>
+                                </div> <!-- end of contact-text -->
+                            </div>
+                            <!-- end of contact container -->
+                        </div>
+                    </div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-1 -->
+    <!-- end of contact -->
 
     <!-- Copyright -->
     <div class="copyright bg-gray">
@@ -564,6 +652,7 @@
     </div>
     <!-- end of copyright -->
 
+    <!-- Video Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -592,6 +681,7 @@
         </div>
     </div>
 
+    <!-- Volunteer Modal popup -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="volunteer" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
             <h5 id="offcanvasRightLabel">Volunteer </h5>
@@ -623,9 +713,15 @@
                     <input type="email" class="form-control-input" id="cemail" required>
                     <label class="label-control" for="cemail">Email</label>
                 </div>
-                <div class="form-group">
-                    <input type="email" class="form-control-input" id="cemail" required>
-                    <label class="label-control" for="cemail">Select Skill Set \/ </label>
+                <div class="form-floating form-group">
+                    <select class="form-select form-control-select" id="floatingSelect"
+                        aria-label="Floating label select example">
+                        <option selected>Select Skill Set</option>
+                        <option value="1">Skill One</option>
+                        <option value="2">Skill Two</option>
+                        <option value="3">Skill Three</option>
+                    </select>
+                    <label for="floatingSelect">Skill Set</label>
                 </div>
                 <div class="form-group">
                     <button type="submit" class="form-control-submit-button">SUBMIT</button>
@@ -633,6 +729,8 @@
             </form>
         </div>
     </div>
+
+    <!-- Donate Modal popup -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="donate" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
             <h5 id="offcanvasRightLabel">Donate Now! </h5>
@@ -659,12 +757,14 @@
             </form>
         </div>
     </div>
+
+    <!-- CSR Modal popup -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="CSR" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
             <h5 id="offcanvasRightLabel">CSR </h5>
-            
+
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        
+
         </div>
         <div class="offcanvas-body">
             <h6> Our team will reach out to you, Thank You for sharing your query.</h6>
@@ -695,6 +795,7 @@
             </form>
         </div>
     </div>
+
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
