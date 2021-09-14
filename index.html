@@ -106,7 +106,7 @@
     .navbar .logo-image img {
         width: 100%;
         height: 80px;
-        border-radius: 10px;
+        /* border-radius: 10px; */
     }
 
     .basic-2,
@@ -182,14 +182,35 @@
     }
 
     @media (max-width: 576px) {
+
+
+
+        .basic-2,
+        .basic-3 {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .basic-2 p,
+        .basic-3 p {
+            text-align: justify;
+        }
+
+        .basic-2 h2,
+        .basic-3 h2 {
+            text-align: center;
+        }
+
         .detail-section {
             display: block;
         }
 
         .navbar .logo-image img {
-            height: 40px;
-            width: 140px;
+            /* height: 40px;
+            width: 140px; */
             /*added width for testing*/
+            height: 35px;
+            width: 70px;
         }
 
         .carousel {
@@ -695,13 +716,13 @@
         </div>
         <hr>
         <div class="offcanvas-body text-center">
-            <form class="p-5">
+            <form class="p-2">
                 <script src="https://checkout.razorpay.com/v1/payment-button.js"
                     data-payment_button_id="pl_HwtVRzB2vB8Xvh" async> </script>
             </form>
-            <h5> Off Line Donation Details </h5>
-            <p>You can also deposit your Cheques/Demand Drafts or RTGS/NEFT to our Banker </p>
-            <section class="p-5">
+            <!-- <h5> Off Line Donation Details </h5> -->
+            <p>Off Line Donation can be done by Cheque/Demand Drafts or RTGS/NEFT with our Banker </p>
+            <section class="p-1">
                 <p>
                     <small>Account Name</small> <br> <b>Karmacart Social Foundation</b>
                 </p>
@@ -712,11 +733,13 @@
                 </p>
                 <p><small> Address </small> <br> <b>HDFC Bank, Charms Star Building, Kalyan 421301</b>
                 </p>
+                <p>Write us at
+                    <b>contact@karmacartfoundation.org</b> with your
+                    transaction details for 80G Certificate.
+                    Your donations are tax exempted under 80G of the Indian Income Tax Act.
+                </p>
             </section>
-            <p class="p-5"> Once you’ve done so, write to us at <b>contact@karmacartfoundation.org</b> with your
-                transaction details
-                for 80G Certificate.<br>
-                Your donations are tax exempted under 80G of the Indian Income Tax Act.</p>
+
         </div>
     </div>
 
