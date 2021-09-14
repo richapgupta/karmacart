@@ -49,6 +49,10 @@
 </head>
 
 <style>
+    .is-hidden {
+        display: none;
+    }
+
     .fixed-top {
         background-color: #000 !important;
     }
@@ -319,25 +323,25 @@
                             <div class="carousel-item active">
                                 <img class="d-block w-100" src="images/site-imgs/img-4.jpg" alt="First slide">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>About Us</h5>
+                                    <!-- <h5>About Us</h5> -->
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img class="d-block w-100" src="images/site-imgs/img-2.jpg" alt="Second slide">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Power Of Three</h5>
+                                    <!-- <h5>Power Of Three</h5> -->
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img class="d-block w-100" src="images/site-imgs/img-3.jpg" alt="Third slide">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>VOLUNTEERS</h5>
+                                    <!-- <h5>VOLUNTEERS</h5> -->
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img class="d-block w-100" src="images/site-imgs/img-5.jpg" alt="Fourth slide">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>CSR</h5>
+                                    <!-- <h5>CSR</h5> -->
                                 </div>
                             </div>
                         </div>
@@ -351,7 +355,11 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
+
                     </div>
+                    <p class="text-white text-right" style="margin:0 100px 0 100px; font-size:10px">All images
+                        are taken from google* </p>
+
                     <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -657,38 +665,37 @@
             <h5 id="offcanvasRightLabel">Volunteer</h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
+        <hr>
         <div class="offcanvas-body">
-            <form onsubmit="event.preventDefault();submitVolForm();">
-
-                <!--method="post" action="volunter.php" id = "frmvolunteer" enctype="application/x-www-form-urlencoded"-->
+            <form name="volunteer">
                 <div class="form-group">
-                    <input type="text" class="form-control-input" id="cname" name="cname" required>
-                    <label class="label-control" for="cname">Name</label>
+                    <input type="text" class="form-control-input" id="vname" name="vname" required>
+                    <label class="label-control" for="vname">Name</label>
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control-textarea" id="caddress" name="caddress" required></textarea>
-                    <label class="label-control" for="cmessage">Address</label>
+                    <textarea class="form-control-textarea" id="vaddress" name="vaddress" required></textarea>
+                    <label class="label-control" for="vaddress">Address</label>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control-input" id="ccity" name="ccity" required>
-                    <label class="label-control" for="cname">City</label>
+                    <input type="text" class="form-control-input" id="vcity" name="vcity" required>
+                    <label class="label-control" for="vcity">City</label>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control-input" id="cstate" name="cstate" required>
-                    <label class="label-control" for="cname">State</label>
+                    <input type="text" class="form-control-input" id="vstate" name="vstate" required>
+                    <label class="label-control" for="vname">State</label>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control-input" id="cmobile" name="cmobile" required>
-                    <label class="label-control" for="cname">Mobile</label>
+                    <input type="text" class="form-control-input" id="vmobile" name="vmobile" required>
+                    <label class="label-control" for="vname">Mobile</label>
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control-input" id="cemail" name="cemail" required>
-                    <label class="label-control" for="cemail">Email</label>
+                    <input type="email" class="form-control-input" id="vemail" name="vemail" required>
+                    <label class="label-control" for="vemail">Email</label>
                 </div>
                 <div class="form-floating form-group">
-                    <select class="form-select form-control-select" id="floatingSelect" name="floatingSelect"
+                    <select class="form-select form-control-select" id="vskill" name="vskill"
                         aria-label="Floating label select example">
-                        <option selected></option>
+                        <option selected>Select your skill</option>
                         <option value="Doctor">Doctor</option>
                         <option value="Healthcare professional">Healthcare professional</option>
                         <option value="Teacher">Teacher</option>
@@ -697,14 +704,22 @@
                         <option value="Blogger & Campaigner">Blogger & Campaigner</option>
                         <option value="Others">Others</option>
                     </select>
-                    <label for="floatingSelect">Skill Set</label>
+                    <label for="vskill">Skill Set</label>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="form-control-submit-button">SUBMIT</button>
+                    <button type="submit" id="volunteer-submit-btn" class="form-control-submit-button">SUBMIT</button>
                 </div>
                 <div id="VolunteerMessage">
                 </div>
             </form>
+            <div class="loading js-loading is-hidden">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+
+            <p class="js-success-message is-hidden">Success!</p>
+            <p class="js-error-message is-hidden">Error!</p>
         </div>
     </div>
 
@@ -720,7 +735,6 @@
                 <script src="https://checkout.razorpay.com/v1/payment-button.js"
                     data-payment_button_id="pl_HwtVRzB2vB8Xvh" async> </script>
             </form>
-            <!-- <h5> Off Line Donation Details </h5> -->
             <p>Off Line Donation can be done by Cheque/Demand Drafts or RTGS/NEFT with our Banker </p>
             <section class="p-1">
                 <p>
@@ -747,38 +761,44 @@
     <div class="offcanvas offcanvas-end" tabindex="-1" id="CSR" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
             <h5 id="offcanvasRightLabel">Corporate Social Responsibility</h5>
-
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-
         </div>
+        <hr>
         <div class="offcanvas-body">
-            <h6> Our team will reach out to you, Thank You for sharing your query.</h6>
-            <form onsubmit="event.preventDefault();submitVolForm();">
+            <form name="csr">
                 <!--method="post" action="csr.php" enctype="application/x-www-form-urlencoded" -->
                 <div class="form-group">
-                    <input type="text" class="form-control-input" id="corgname" name="corgname" required>
-                    <label class="label-control" for="cname">Organisation Name </label>
+                    <input type="text" class="form-control-input" id="csrorgname" name="csrorgname" required>
+                    <label class="label-control" for="csrorgname">Organisation Name </label>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control-input" id="cpername" name="cpername" required>
-                    <label class="label-control" for="cname">Contact Person Name </label>
+                    <input type="text" class="form-control-input" id="csrname" name="csrname" required>
+                    <label class="label-control" for="csrname">Contact Person Name </label>
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control-input" id="cemail" name="cemail" required>
-                    <label class="label-control" for="cemail">E-mail </label>
+                    <input type="email" class="form-control-input" id="csremail" name="csremail" required>
+                    <label class="label-control" for="csremail">E-mail </label>
                 </div>
                 <div class="form-group">
-                    <input type="number" class="form-control-input" id="ccontactno" name="ccontactno" required>
-                    <label class="label-control" for="ccontactno"> Contact No. </label>
+                    <input type="number" class="form-control-input" id="csrcontactno" name="csrcontactno" required>
+                    <label class="label-control" for="csrcontactno"> Contact No. </label>
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control-textarea" id="cmessage" name="cmessage" required></textarea>
-                    <label class="label-control" for="cmessage">Your message</label>
+                    <textarea class="form-control-textarea" id="csrmessage" name="csrmessage" required></textarea>
+                    <label class="label-control" for="csrmessage">Your message</label>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="form-control-submit-button">SUBMIT</button>
+                    <button type="submit" id="csr-submit-btn" class="form-control-submit-button">SUBMIT</button>
                 </div>
             </form>
+            <div class="loading js-loading is-hidden">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+
+            <p class="js-success-message is-hidden">Success!</p>
+            <p class="js-error-message is-hidden">Error!</p>
         </div>
     </div>
 
@@ -788,10 +808,9 @@
             <h5 id="offcanvasRightLabel">Contact Us </h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
+        <hr>
         <div class="offcanvas-body">
-            <h6> Thank You for reaching out to us. We will get back to you soon.</h6>
-            <form onsubmit="event.preventDefault();submitVolForm();">
-
+            <form name="contactus">
                 <div class="form-group">
                     <input type="text" class="form-control-input" id="cname" name="cname" required>
                     <label class="label-control" for="cname"> Name </label>
@@ -802,16 +821,24 @@
                 </div>
                 <div class="form-group">
                     <input type="number" class="form-control-input" id="ccontactno" name="ccontactno" required>
-                    <label class="label-control" for="cemail">Contact No. </label>
+                    <label class="label-control" for="ccontactno">Contact No. </label>
                 </div>
                 <div class="form-group">
                     <textarea class="form-control-textarea" id="cmessage" name="cmessage" required></textarea>
                     <label class="label-control" for="cmessage">Your message</label>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="form-control-submit-button">SUBMIT</button>
+                    <button type="submit" id="contact-submit-btn" class="form-control-submit-button">SUBMIT</button>
                 </div>
             </form>
+            <div class="loading js-loading is-hidden">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+
+            <p class="js-success-message is-hidden">Success!</p>
+            <p class="js-error-message is-hidden">Error!</p>
         </div>
     </div>
 
@@ -910,6 +937,72 @@
 
                 });
         }
+    </script>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyYBN81GQuRqI7gnLNSJRG2MdNjCykB9Q_L9ieInHdn76xD7gE/exec';
+
+        const csr = document.forms['csr'];
+        const volunteer = document.forms['volunteer'];
+        const contactus = document.forms['contactus'];
+
+        const loading = document.querySelector('.js-loading')
+        const successMessage = document.querySelector('.js-success-message')
+        const errorMessage = document.querySelector('.js-error-message')
+
+        csr.addEventListener('submit', e => {
+            e.preventDefault();
+            var targetElement = e.target || e.srcElement;
+            showLoadingIndicator(targetElement, csr)
+            fetch(scriptURL, { method: 'POST', body: new FormData(csr) })
+                .then(response => showSuccessMessage(targetElement, csr, response))
+                .catch(error => showErrorMessage(error))
+        });
+
+        volunteer.addEventListener('submit', e => {
+            e.preventDefault();
+            var targetElement = e.target || e.srcElement;
+            showLoadingIndicator(targetElement, volunteer)
+            fetch(scriptURL, { method: 'POST', body: new FormData(volunteer) })
+                .then(response => showSuccessMessage(targetElement, volunteer, response))
+                .catch(error => showErrorMessage(error))
+        });
+
+        contactus.addEventListener('submit', e => {
+            e.preventDefault();
+            var targetElement = e.target || e.srcElement;
+            showLoadingIndicator(targetElement, contactus)
+            fetch(scriptURL, { method: 'POST', body: new FormData(contactus) })
+                .then(response => showSuccessMessage(targetElement, contactus, response))
+                .catch(error => showErrorMessage(error))
+        });
+
+        function showLoadingIndicator(submitbtn, form) {
+            console.log("submitbtn", submitbtn);
+            // submitbtn.classList.add('is-hidden');
+            loading.classList.remove('is-hidden')
+        }
+
+        function showSuccessMessage(submitbtn, form, response) {
+            // submitbtn.classList.remove('is-hidden');
+            console.log('Success!', response)
+            setTimeout(() => {
+                successMessage.classList.remove('is-hidden')
+                loading.classList.add('is-hidden')
+            }, 500)
+        }
+
+        function showErrorMessage(error) {
+            console.error('Error!', error.message)
+            setTimeout(() => {
+                errorMessage.classList.remove('is-hidden')
+                loading.classList.add('is-hidden')
+            }, 500)
+        }
+
+
+
     </script>
 </body>
 
