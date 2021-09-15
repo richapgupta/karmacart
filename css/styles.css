@@ -35,7 +35,7 @@ html {
 
 body, p {
 	/*color: #6b747b; */
-	color: #000; 
+	color: #000;
 	font: 400 1rem/1.625rem "Open Sans", sans-serif;
 }
 
@@ -519,7 +519,7 @@ input[type='checkbox'] {
 }
 
 .header .left-wrapper {
-	background: url("../images/background-dots.png") #3b363c;
+	/* background: url("../images/background-dots.png") #3b363c; */
     background-blend-mode: color-burn;
 }
 
@@ -1110,3 +1110,4 @@ a:hover.back-to-top {
 	/* end of contact */
 }
 /* end of min-width 1200px */
+

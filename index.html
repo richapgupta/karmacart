@@ -30,6 +30,7 @@
     <link href="css/swiper.css" rel="stylesheet">
     <link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/custom-styles.css" rel="stylesheet">
 
     <!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
@@ -48,218 +49,11 @@
         crossorigin="anonymous"></script>
 </head>
 
-<style>
-    .is-hidden {
-        display: none;
-    }
-
-    .fixed-top {
-        background-color: #000 !important;
-    }
-
-    .header,
-    .header .left-wrapper {
-        background-color: #000 !important;
-    }
-
-    .navbar-dark .navbar-nav .nav-link {
-        color: #fff;
-    }
-
-    li.nav-item {
-        margin-left: 20px;
-    }
-
-    .btn-outline-light-green {
-        background-color: #cafc4f;
-        border-color: #cafc4f;
-        color: #333333;
-        font-weight: bold;
-        font-size: 0.875rem;
-        text-transform: uppercase;
-    }
-
-    .btn {
-        text-transform: uppercase;
-        font-size: 0.875rem;
-    }
-
-    img {
-        filter: grayscale(100%);
-    }
-
-    .carousel {
-        margin: 200px 100px 0 100px;
-        padding: 10px;
-        background: #cafc4f;
-    }
-
-    .carousel-item img {
-        width: auto;
-        /* height: 450px;
-        max-height: 450px; */
-    }
-
-    .navbar-dark .navbar-brand {
-        background: #fff;
-        padding: 0.25rem 0.8rem;
-        border-radius: 10px;
-        /* padding: 0; */
-    }
-
-    .navbar .logo-image img {
-        width: 100%;
-        height: 80px;
-        /* border-radius: 10px; */
-    }
-
-    .basic-2,
-    .basic-3 {
-        padding-top: 10rem;
-        padding-bottom: 6.375rem;
-        /* padding-top: 0;
-        padding-bottom: 5rem; */
-    }
-
-    .basic-2 .image-container {
-        top: 0 !important;
-        right: 0;
-        width: auto;
-        position: unset;
-        margin-right: 4rem;
-    }
-
-    .basic-3 .image-container {
-        top: 0 !important;
-        position: unset;
-        left: 0;
-        width: auto;
-        margin-left: 4rem;
-    }
-
-    .detail-section {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .basic-2 .text-container {
-        margin-left: 0;
-    }
-
-    .basic-3 .text-container {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .header .left-wrapper .text-container:after,
-    .header .left-wrapper .text-container:before {
-        /* border-color: #000CFF; */
-        border-color: #cafc4f;
-        opacity: 0.9;
-    }
-
-    .fade.show {
-        opacity: 0.5;
-    }
-
-    .form-control-input,
-    .form-control-select {
-        border-radius: 0;
-    }
-
-    .form-floating>label {
-        padding-left: 1.3125rem;
-    }
-
-    .offcanvas-collapse {
-        background-color: #000;
-    }
-
-    .form-1 .left-wrapper.left-wrapper1 .contact-container {
-        margin-left: 2.75rem;
-    }
-
-    .form-1 .left-wrapper.left-wrapper1 .text-container {
-        padding-top: 3rem;
-        padding-bottom: 1rem;
-        text-align: center;
-    }
-
-    @media (max-width: 576px) {
-
-
-
-        .basic-2,
-        .basic-3 {
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-        }
-
-        .basic-2 p,
-        .basic-3 p {
-            text-align: justify;
-        }
-
-        .basic-2 h2,
-        .basic-3 h2 {
-            text-align: center;
-        }
-
-        .detail-section {
-            display: block;
-        }
-
-        .navbar .logo-image img {
-            /* height: 40px;
-            width: 140px; */
-            /*added width for testing*/
-            height: 35px;
-            width: 70px;
-        }
-
-        .carousel {
-            margin: 0 0 10px 0;
-            padding: 7px;
-        }
-
-        .image-container {
-            display: none;
-        }
-
-        li.nav-item {
-            text-align: center;
-        }
-
-        .navbar .nav-item .nav-link {
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-        }
-
-        .btn.btn-outline-light-green {
-            margin-top: 20px;
-            width: 100%;
-        }
-
-        .carousel-item img {
-            width: auto;
-            height: auto;
-        }
-
-        .w-50 {
-            width: 100% !important;
-        }
-
-        .header .left-wrapper .text-container:before,
-        .header .left-wrapper .text-container:after {
-            border-width: 10px 10px 0 0;
-        }
-    }
-</style>
 
 <body data-spy="scroll" data-target=".fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container">
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
@@ -497,20 +291,27 @@
                 <div class="col-lg-12 detail-section">
                     <div class="text-container">
                         <h2 class="text-uppercase">Volunteers</h2>
-                        <p>Volunteers in other word <b>"Hero"</b>. Working with dedication and integrity towards
-                            achieving the dream. Volunteers are our strength and pillars of the NGO. You are the face of
-                            the
-                            organisation. And you have the power to create the impossible. You are our true partners,
-                            ambassadors and inspiration.
+                        <p>
+                            Volunteers in other words "Hero". Working with dedication and integrity towards achieving
+                            the dream. Volunteers are
+                            strength and pillars of the NGO. You are the face of the organisation. And you have the
+                            power to create the impossible.
+                            You are the true partners, ambassadors, and inspiration.
+
+
+
+
                         </p>
                         <p>
                             You work in partnership with the organisation for a cause that will transform the society at
-                            large without any appreciation or rewards. In other words you are the commandos of the
-                            organisation who is constantly working for other people.</p>
+                            large without any
+                            appreciation or rewards. In other words, you are the commandos of the organisation who are
+                            constantly working for other
+                            people.
+                        </p>
                         <p>
-                            Hero / Partners we salute you for who are and who you are not.
-                            Thank you for being with us</p>
-                        <!-- button class="btn btn-primary" -->
+                            Hero / Partners, we salute you for who are and who you are not. Thank you for being with us.
+                        </p>
                         <button class="btn btn-lg w-50 btn-outline-light-green" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#volunteer" aria-controls="Volunteer">Volunteer
                             Now!</button>
@@ -706,20 +507,29 @@
                     </select>
                     <label for="vskill">Skill Set</label>
                 </div>
+
+                <div class="loading js-loading text-center p-2 pb-3 is-hidden">
+                    <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+
                 <div class="form-group">
                     <button type="submit" id="volunteer-submit-btn" class="form-control-submit-button">SUBMIT</button>
                 </div>
                 <div id="VolunteerMessage">
                 </div>
             </form>
-            <div class="loading js-loading is-hidden">
-                <div class="spinner-border" role="status">
-                    <span class="visually-hidden">Loading...</span>
+
+            <div class="toast align-items-center text-white bg-secondary border-0 w-100" role="alert"
+                aria-live="assertive" aria-atomic="true">
+                <div class="d-flex justify-content-around">
+                    <div class="toast-body font-weight-bold text-uppercase">
+                        Submitted Successfully !!
+                    </div>
                 </div>
             </div>
 
-            <p class="js-success-message is-hidden">Success!</p>
-            <p class="js-error-message is-hidden">Error!</p>
         </div>
     </div>
 
@@ -787,18 +597,26 @@
                     <textarea class="form-control-textarea" id="csrmessage" name="csrmessage" required></textarea>
                     <label class="label-control" for="csrmessage">Your message</label>
                 </div>
+
+                <div class="loading js-loading text-center p-2 pb-3 is-hidden">
+                    <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+
                 <div class="form-group">
                     <button type="submit" id="csr-submit-btn" class="form-control-submit-button">SUBMIT</button>
                 </div>
             </form>
-            <div class="loading js-loading is-hidden">
-                <div class="spinner-border" role="status">
-                    <span class="visually-hidden">Loading...</span>
+
+            <div class="toast align-items-center text-white bg-secondary border-0 w-100" role="alert"
+                aria-live="assertive" aria-atomic="true">
+                <div class="d-flex justify-content-around">
+                    <div class="toast-body font-weight-bold text-uppercase">
+                        Submitted Successfully !!
+                    </div>
                 </div>
             </div>
-
-            <p class="js-success-message is-hidden">Success!</p>
-            <p class="js-error-message is-hidden">Error!</p>
         </div>
     </div>
 
@@ -827,21 +645,28 @@
                     <textarea class="form-control-textarea" id="cmessage" name="cmessage" required></textarea>
                     <label class="label-control" for="cmessage">Your message</label>
                 </div>
+
+                <div class="loading js-loading text-center p-2 pb-3 is-hidden">
+                    <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+
                 <div class="form-group">
                     <button type="submit" id="contact-submit-btn" class="form-control-submit-button">SUBMIT</button>
                 </div>
             </form>
-            <div class="loading js-loading is-hidden">
-                <div class="spinner-border" role="status">
-                    <span class="visually-hidden">Loading...</span>
+
+            <div class="toast align-items-center text-white bg-secondary border-0 w-100" role="alert"
+                aria-live="assertive" aria-atomic="true">
+                <div class="d-flex justify-content-around">
+                    <div class="toast-body font-weight-bold text-uppercase">
+                        Submitted Successfully !!
+                    </div>
                 </div>
             </div>
-
-            <p class="js-success-message is-hidden">Success!</p>
-            <p class="js-error-message is-hidden">Error!</p>
         </div>
     </div>
-
 
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
@@ -856,87 +681,7 @@
         // $(window).on('load', function () {
         //     $('#exampleModal').modal('show');
         // });
-        function submitVolForm() {
-            $.post("volunter.php",
-                {
-                    id: 1,
-                    cname: $("#cname").val(),
-                    ccity: $("#ccity").val(),
-                    caddress: $("#caddress").val(),
-                    cstate: $("#cstate").val(),
-                    cmobile: $("#cmobile").val(),
-                    cemail: $("#cemail").val(),
-                    floatingSelect: $("#floatingSelect").val()
-                },
-                function (data) {
-                    if (data == "Sucess") {
-                        $("#VolunteerMessage").html("Thank you for expressing an interest in volunteering with us.");
-                        $("#cname").val("");
-                        $("#ccity").val("");
-                        $("#caddress").val("");
-                        $("#cstate").val("");
-                        $("#cmobile").val("");
-                        $("#cemail").val("");
-                        $("#floatingSelect").val("");
-                    }
-                    else $("#VolunteerMessage").html("Error in Saving Data");
 
-                });
-        }
-        function submitCSRForm() {
-            $.post("volunter.php",
-                {
-                    id: 2,
-                    cname: $("#cname").val(),
-                    ccity: $("#ccity").val(),
-                    caddress: $("#caddress").val(),
-                    cstate: $("#cstate").val(),
-                    cmobile: $("#cmobile").val(),
-                    cemail: $("#cemail").val(),
-                    floatingSelect: $("#floatingSelect").val()
-                },
-                function (data) {
-                    if (data == "Sucess") {
-                        $("#VolunteerMessage").html("Thank You for showing interest for CSR. Our team will reach out to shortly");
-                        $("#cname").val("");
-                        $("#ccity").val("");
-                        $("#caddress").val("");
-                        $("#cstate").val("");
-                        $("#cmobile").val("");
-                        $("#cemail").val("");
-                        $("#floatingSelect").val("");
-                    }
-                    else $("#VolunteerMessage").html(data);
-
-                });
-        }
-        function submitContForm() {
-            $.post("volunter.php",
-                {
-                    id: 3,
-                    cname: $("#cname").val(),
-                    ccity: $("#ccity").val(),
-                    caddress: $("#caddress").val(),
-                    cstate: $("#cstate").val(),
-                    cmobile: $("#cmobile").val(),
-                    cemail: $("#cemail").val(),
-                    floatingSelect: $("#floatingSelect").val()
-                },
-                function (data) {
-                    if (data == "Sucess") {
-                        $("#VolunteerMessage").html("Thank You for sharing your query, Our team will reach out to you shortly");
-                        $("#cname").val("");
-                        $("#ccity").val("");
-                        $("#caddress").val("");
-                        $("#cstate").val("");
-                        $("#cmobile").val("");
-                        $("#cemail").val("");
-                        $("#floatingSelect").val("");
-                    }
-                    else $("#VolunteerMessage").html(data);
-
-                });
-        }
     </script>
 
 
@@ -979,14 +724,20 @@
         });
 
         function showLoadingIndicator(submitbtn, form) {
-            console.log("submitbtn", submitbtn);
-            // submitbtn.classList.add('is-hidden');
-            loading.classList.remove('is-hidden')
+            $(".js-loading").removeClass("is-hidden");
         }
 
         function showSuccessMessage(submitbtn, form, response) {
-            // submitbtn.classList.remove('is-hidden');
-            console.log('Success!', response)
+            $(".js-loading").addClass("is-hidden");
+            console.log('Success!', response);
+            var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+            var toastList = toastElList.map(function (toastEl) {
+                return new bootstrap.Toast(toastEl)
+            })
+            toastList.forEach(toast => toast.show()); // This show them
+
+            console.log(toastList); // Testing to see if it works
+            form.reset();
             setTimeout(() => {
                 successMessage.classList.remove('is-hidden')
                 loading.classList.add('is-hidden')
