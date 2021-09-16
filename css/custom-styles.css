@@ -139,10 +139,14 @@
         border-radius: .3rem;
     }
 
+    .form-control-textarea {
+     height: 7rem;
+    }
+
     @media (max-width: 576px) {
         .basic-2,
         .basic-3 {
-            padding-top: 2rem;
+            padding-top: 6rem;
             padding-bottom: 2rem;
         }
 
