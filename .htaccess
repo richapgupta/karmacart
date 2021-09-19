@@ -1,0 +1,10 @@
+
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+RewriteEngine On
+RewriteCond %{HTTPS} off 
+RewriteCond %{HTTP_HOST} ^karmacartfoundation\.org$ [NC]
+RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# END WordPress
