@@ -101,7 +101,8 @@ a:hover {
 	text-decoration: none;
 }
 
-a.white {
+a.white,
+a.white:hover {
 	color: #ffffff;
 }
 
@@ -776,7 +777,32 @@ a:hover.back-to-top {
 	background-color: #000000;
 }
 
+.disclaimer-section {
+	background: #343423;
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
 
+.disclaimer-section a.white {
+	padding: 10px 0 0 0;
+	display: block;
+	text-align: center;
+}
+
+.hide-mobile {
+	display: none;
+}
+
+.show-mobile {
+	display: block;
+}
+.toast-custom {
+	background-color: #cafc4f;
+    border-color: #cafc4f;
+    color: #333333;
+	width: 100%;
+	border-width: 1px;
+}
 /*************************/
 /*     Media Queries     */
 /*************************/
@@ -836,6 +862,17 @@ a:hover.back-to-top {
 		margin-left: 1.5rem;
 	}
 	/* end of contact */
+
+	.disclaimer-section a.white {
+		padding: 0;
+	}
+
+	.hide-mobile {
+		display: block;
+	}
+	.show-mobile {
+	display: none;
+}
 }
 /* end of min-width 768px */
 

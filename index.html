@@ -13,9 +13,11 @@
     <meta property="og:site_name" content="karmacartfoundation.org" /> <!-- website name -->
     <meta property="og:site" content="https://karmacartfoundation.org" /> <!-- website link -->
     <meta property="og:title" content="Karmacart Social Foundation" /> <!-- title shown in the actual shared post -->
-    <meta property="og:description" content="Karmacart Social Foundation an NGO from Mumbai, 
-    working towards providing free Medical & Healthcare services to the underprivileged. " /> <!-- description shown in the actual shared post -->
-    <meta property="og:image" content="https://karmacartfoundation.org/images/logo/karamcart_logo.jpg" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:description" content="Karmacart Social Foundation an NGO from Mumbai,
+    working towards providing free Medical & Healthcare services to the underprivileged. " />
+    <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="https://karmacartfoundation.org/images/logo/karamcart_logo.jpg" />
+    <!-- image link, make sure it's jpg -->
     <meta property="og:url" content="https://karmacartfoundation.org" /> <!-- where do you want your post to link to -->
     <meta property="og:type" content="article" />
 
@@ -196,6 +198,8 @@
                             takes to save the precious lives of one of the most intelligent creatures created by
                             God.
                         </p>
+                        <p class="font-weight-bold">All Donations to karmacart social foundation are 50% Tax exempt
+                            under section 80G of IT Act, 1961.</p>
                         <button class="btn btn-lg w-50 btn-outline-light-green" data-bs-toggle="offcanvas"
                             data-bs-target="#donate" aria-controls="donate" type="button">Donate</button>
                         <!--a class="btn-outline-reg page-scroll" href="#contact">CONTACT</a -->
@@ -405,11 +409,33 @@
                             <!-- end of contact container -->
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <p class="p-small text-center text-white">Copyright © 2021
+                    <div class="row disclaimer-section">
+                        <div class="col-xl-1"></div>
+                        <div class="col-xl-5 hide-mobile">
+                            <span class="p-small text-left text-white">Copyright © 2021
                                 Karmacart Social Foundation
-                            </p>
+                            </span>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="row">
+                                <div class="col-xl-4">
+                                    <a class="white no-line" href="#" data-toggle="modal" data-bs-target="#disclaimer"
+                                        data-target="#disclaimer">Disclaimer</a>
+                                </div>
+                                <div class="col-xl-4">
+                                    <a class="white no-line" href="#" data-toggle="modal"
+                                        data-target="#cancelpolicy">Cancellation Policy</a>
+                                </div>
+                                <div class="col-xl-4">
+                                    <a class="white no-line" href="#" data-toggle="modal"
+                                        data-target="#privacypolicy">Privacy Policy</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 show-mobile">
+                            <span class="p-small d-block p-5 text-center text-white">Copyright © 2021
+                                Karmacart Social Foundation
+                            </span>
                         </div>
                     </div>
                 </div> <!-- end of col -->
@@ -419,8 +445,8 @@
     <!-- end of contact -->
 
     <!-- Video Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1">
-        <div class="modal-dialog">
+    <div class="modal" id="exampleModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body">
                     <figure role="figure">
@@ -436,7 +462,7 @@
     </div>
 
     <!-- Volunteer Modal popup -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="volunteer" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas offcanvas-end w-25" tabindex="-1" id="volunteer" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
             <h5 id="offcanvasRightLabel">Volunteer</h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -458,11 +484,11 @@
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control-input" id="vstate" name="vstate" required>
-                    <label class="label-control" for="vname">State</label>
+                    <label class="label-control" for="vstate">State</label>
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control-input" id="vmobile" name="vmobile" required>
-                    <label class="label-control" for="vname">Mobile</label>
+                    <label class="label-control" for="vmobile">Mobile</label>
                 </div>
                 <div class="form-group">
                     <input type="email" class="form-control-input" id="vemail" name="vemail" required>
@@ -496,8 +522,7 @@
                 </div>
             </form>
 
-            <div class="toast align-items-center text-white bg-secondary border-0 w-100" role="alert"
-                aria-live="assertive" aria-atomic="true">
+            <div class="toast align-items-center toast-custom" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="d-flex justify-content-around">
                     <div class="toast-body font-weight-bold text-uppercase">
                         Submitted Successfully !!
@@ -509,20 +534,20 @@
     </div>
 
     <!-- Donate Modal popup -->
-    <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="donate" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas offcanvas-end w-25" tabindex="-1" id="donate" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
             <h5 id="offcanvasRightLabel"> Donate Now </h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <hr>
         <div class="offcanvas-body text-center">
-            
+
 
             <!--form class="p-2">
-                <script src="https://checkout.razorpay.com/v1/payment-button.js" 
+                <script src="https://checkout.razorpay.com/v1/payment-button.js"
                     data-payment_button_id="pl_HzPsuX0sKaakQH" async> </script-->
-                <!-- Test Mode Script Below-->
-                <!--script src="https://checkout.razorpay.com/v1/payment-button.js"
+            <!-- Test Mode Script Below-->
+            <!--script src="https://checkout.razorpay.com/v1/payment-button.js"
                     data-payment_button_id="pl_HwtVRzB2vB8Xvh" async> </script-->
             <!--/form --Off Line-->
             <p> Donation can be done by Cheque/Demand Drafts or RTGS/NEFT with our Banker </p>
@@ -541,7 +566,8 @@
                 <p><small> Address </small> <br> <b>HDFC Bank, <br>Bail Bazar, <br>Kalyan 421301</b>
                 </p>
                 <p>
-                <small> Note </small> <br> <b>Please share the payment details to <br>contact@karmacartfoundation.org <br>so that we can acknowledge you for the contribution.</b>
+                    <small> Note </small> <br> <b>Please share the payment details to
+                        <br>contact@karmacartfoundation.org <br>so that we can acknowledge you for the contribution.</b>
                 </p>
 
             </section>
@@ -550,7 +576,7 @@
     </div>
 
     <!-- CSR Modal popup -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="CSR" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas offcanvas-end w-25" tabindex="-1" id="CSR" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
             <h5 id="offcanvasRightLabel">Corporate Social Responsibility</h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -603,7 +629,7 @@
     </div>
 
     <!-- Contact us Modal popup -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="contactus" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas offcanvas-end w-25" tabindex="-1" id="contactus" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
             <h5 id="offcanvasRightLabel">Contact Us </h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -650,6 +676,147 @@
         </div>
     </div>
 
+    <div class="modal  bd-example-modal-lg" id="disclaimer" tabindex="-1" role="dialog" aria-labelledby="disclaimer"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Disclaimer</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Your Helping Hand can change someone’s life.
+
+                    helpinghandindiango.org shall try to provide only such information on the site which is right to the
+                    best of their
+                    awareness and belief. However, helpinghandindiango.org does not hold itself responsible for any
+                    inexactness of facts or
+                    information provided on this site. Any accountabilities arising out of any act or omission by a
+                    visitor to this site, by
+                    depending on or making use of the information offered on this site, shall be completely to the
+                    account of such visitor.
+                    helpinghandindiango.org will go all-out to make sure that tax exemption certificates as well as
+                    feedback reports to the
+                    donors inside reasonable time limits. helpinghandindiango.org disclaims any accountability, legal or
+                    else, that might
+                    arise because of the act, omission or otherwise of any visitor to this site, or caused by the same.
+                    Visitors to the site
+                    admit that helpinghandindiango.org is only a “facilitator” for making donations, and as such, stands
+                    indemnified from
+                    any accountability that might arise because of the same. Visitors moreover acknowledge that visiting
+                    this site is an
+                    implicit reception of this disclaimer on their part.
+
+                    Disclaimer – ‘Mini School’ +91 11 41212300 “Free Education 24/7 for Special Students”
+
+                    Content and Audio Disclaimer, We are Helping Hand India NGO, Delhi. We are working for free
+                    education for Disabled
+                    Students. We are under developing our Tele education project Mini School for Students to enhance
+                    their education from
+                    home. We are creating our own content for Mini School. This is to inform that if by
+                    mistake/willingly and unwillingly we
+                    are using some content for demo purpose in our testing period, which may belong to some company or
+                    educational. We feel
+                    apologies for this and we will delete that before final implementation. Thank you.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal  bd-example-modal-lg" id="cancelpolicy" tabindex="-1" role="dialog" aria-labelledby="cancelpolicy"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cancellation Policy</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Your Helping Hand can change someone’s life.
+
+                    helpinghandindiango.org shall try to provide only such information on the site which is right to the
+                    best of their
+                    awareness and belief. However, helpinghandindiango.org does not hold itself responsible for any
+                    inexactness of facts or
+                    information provided on this site. Any accountabilities arising out of any act or omission by a
+                    visitor
+                    to this site, by
+                    depending on or making use of the information offered on this site, shall be completely to the
+                    account
+                    of such visitor.
+                    helpinghandindiango.org will go all-out to make sure that tax exemption certificates as well as
+                    feedback
+                    reports to the
+                    donors inside reasonable time limits. helpinghandindiango.org disclaims any accountability, legal or
+                    else, that might
+                    arise because of the act, omission or otherwise of any visitor to this site, or caused by the same.
+                    Visitors to the site
+                    admit that helpinghandindiango.org is only a “facilitator” for making donations, and as such, stands
+                    indemnified from
+                    any accountability that might arise because of the same. Visitors moreover acknowledge that visiting
+                    this site is an
+                    implicit reception of this disclaimer on their part.
+
+                    apologies for this and we will delete that before final implementation. Thank you.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal  bd-example-modal-lg" id="privacypolicy" tabindex="-1" role="dialog"
+        aria-labelledby="privacypolicy" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Privacy Policy</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Your Helping Hand can change someone’s life.
+
+                    helpinghandindiango.org shall try to provide only such information on the site which is right to the
+                    best of their
+                    awareness and belief. However, helpinghandindiango.org does not hold itself responsible for any
+                    inexactness of facts or
+                    information provided on this site. Any accountabilities arising out of any act or omission by a
+                    visitor
+                    to this site, by
+                    depending on or making use of the information offered on this site, shall be completely to the
+                    account
+                    of such visitor.
+
+                    Disclaimer – ‘Mini School’ +91 11 41212300 “Free Education 24/7 for Special Students”
+
+                    Content and Audio Disclaimer, We are Helping Hand India NGO, Delhi. We are working for free
+                    education
+                    for Disabled
+                    Students. We are under developing our Tele education project Mini School for Students to enhance
+                    their
+                    education from
+                    home. We are creating our own content for Mini School. This is to inform that if by
+                    mistake/willingly
+                    and unwillingly we
+                    are using some content for demo purpose in our testing period, which may belong to some company or
+                    educational. We feel
+                    apologies for this and we will delete that before final implementation. Thank you.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- do not remove this is the video that will appear on page load -->
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            $('#exampleModal').modal('show');
+        });
+
+    </script>
+
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
@@ -658,14 +825,6 @@
     <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
     <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
-
-    <script type="text/javascript">
-        // $(window).on('load', function () {
-        //     $('#exampleModal').modal('show');
-        // });
-
-    </script>
-
 
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyYBN81GQuRqI7gnLNSJRG2MdNjCykB9Q_L9ieInHdn76xD7gE/exec';
@@ -720,14 +879,14 @@
             form.reset();
             setTimeout(() => {
                 loading.classList.add('is-hidden')
-            }, 500)
+            }, 1000)
         }
 
         function showErrorMessage(error) {
             console.error('Error!', error.message)
             setTimeout(() => {
                 loading.classList.add('is-hidden')
-            }, 500)
+            }, 1000)
         }
 
     </script>
