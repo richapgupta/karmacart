@@ -789,13 +789,6 @@ a:hover.back-to-top {
 	text-align: center;
 }
 
-.hide-mobile {
-	display: none;
-}
-
-.show-mobile {
-	display: block;
-}
 .toast-custom {
 	background-color: #cafc4f;
     border-color: #cafc4f;
@@ -867,12 +860,7 @@ a:hover.back-to-top {
 		padding: 0;
 	}
 
-	.hide-mobile {
-		display: block;
-	}
-	.show-mobile {
-	display: none;
-}
+
 }
 /* end of min-width 768px */
 
